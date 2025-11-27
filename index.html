@@ -6,19 +6,40 @@
   <link rel="shortcut icon" href="favicon_transparent.ico" type="image/x-icon">
   <title>Jaden Reading Garden</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="./index.js">
+  </script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <h1 class="logo"><img src="logo_large.png" alt=""></h1>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <div class="nav-cont">
+    <!-- Navigation -->
+    <header class="navbar">
+      <nav class="nav-links">
+        <h1 class="logo"><img src="./images/logo_large.png" alt=""></h1>
+        <!-- Large screen Nav links -->
+        <div class="large_menu" >
+        <a class="links" href="index.html">Home</a>
+        <a class="links" href="about.html">About</a>
+        <a class="links" href="gallery.html">Gallery</a>
+        <a class="links" href="#">Contact</a>
+        </div>
+        <div class="menu_cont" id="hamburger" >
+          <span class="lines" id="lines"  ></span>
+          <span class="lines" id="lines"  ></span>
+          <span class="lines" id="lines"  ></span>
+        </div>
+      </nav>
+    </header>
+           <!-- Small screen menu  -->
+      <div class="Small_menu" id="hammenu" >
+      <a class="links Small_menu_links" href="index.html">Home</a>
+      <a class="links Small_menu_links" href="about.html">About</a>
+      <a class="links Small_menu_links" href="gallery.html">Gallery</a>
+      <a href="" class="btn bgs-gradient">Contact Us</a>
+      </div>
+      
+  </div>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -26,7 +47,7 @@
     <div class="hero-content">
       <h2> Welcome to Jarding Reading Garden!</h2>
       <p>YOUR NO.1 READING GARDEN & OUTDOOR LIBRARY</p>
-      <a href="#" class="btn">Explore Now</a>
+      <a href="#" class="btn bg-gradient ">Explore Now</a>
     </div>
   </section>
 
